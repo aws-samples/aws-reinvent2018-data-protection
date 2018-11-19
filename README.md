@@ -140,7 +140,7 @@ This will make it easier to supply the values to the CloudFormation template tha
 
 - 7.1 - Return to the CloudFormation service console.
 - 7.2 - Verify that the dataprot-vpc stack has a status of COMPLETE.
-- 7.3 - Download the keeping-secrets-main-yyyymmdd.yaml file in this repository (where yyyymmdd represents the version date) and run it through CloudFormation.
+- 7.3 - Download the data-protection-main-yyyymmdd.yaml file in this repository (where yyyymmdd represents the version date) and run it through CloudFormation.
 There are two sections for parameters.
 The first section is for parameters you must update.
 The second section is for parameters whose default values are generally acceptable.
@@ -221,8 +221,8 @@ If the password didn't change, refresh the screen and retrieve the scret again.
 ### 9. Clean up
 
 - 9.1 - If you enabled the rotation of the database secret, you will see a CloudFormation stack with a name referencing the serverless application repository.  Delete that stack.
-- 9.2 - Delete the CloudFormation stack you built from keeping-secrets-wp.yaml.
-- 9.3 - Delete the CloudFormation stack you built from keeping-secrets-vpc.yaml.
+- 9.2 - Delete the CloudFormation stack you built from data-protection-main-yyyymmdd.yaml.
+- 9.3 - Delete the CloudFormation stack you built from data-protection-vpc-yyyymmdd.yaml.
 - 9.4 - Delete any S3 buckets that were created during the launch of the stack.  The bucket names begin with the stack name followed by *-s3bucket-* and some random characters (e.g. dataprot-main-s3-bucket-1a2b3c4d).
 - 9.5 - Delete any CloudWatch LogGroups that were created that you no longer need.
 
