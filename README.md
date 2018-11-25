@@ -202,7 +202,7 @@ You should see the same book entry as in step 9.3.
 | Enable automatic rotation | selected |
 | Select rotation interval | 30 days |
 | Create a new Lambda function | selected |
-| New Lambda function name | dataprot |
+| New Lambda function name | -dataprot (note the leading '-') |
 | Use this secret | selected |
 
 Click Save.
