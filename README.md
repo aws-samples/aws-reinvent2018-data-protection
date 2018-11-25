@@ -161,7 +161,7 @@ The second section is for parameters whose default values are generally acceptab
 
 ### 9. Log in to the bastion host and check connectivity.
 
-- 9.1 - Sign into the instance using either your ssh tool or AWS Systems Manager Session Manager.  If you use an ssh tool, you can locate the IP address of the instance on the CloudFormation output section for the dataprot-main stack under *BastionIP*.  If you sign in using AWS Systems Manager Session Manager, use the following commands to move into the home director for the user *ec2-user*:
+- 9.1 - Sign into the instance using either your ssh tool or AWS Systems Manager Session Manager.  If you use an ssh tool, you can locate the IP address of the instance on the CloudFormation output section for the dataprot-main stack under *BastionIP*.  If you sign in using AWS Systems Manager Session Manager, use the following commands to move into the home directory for the user *ec2-user*:
 
 ```
 sudo su ec2-user
