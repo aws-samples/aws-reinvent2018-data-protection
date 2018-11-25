@@ -218,11 +218,16 @@ If the password didn't change, refresh the screen and retrieve the scret again.
 
 - 9.10 - Repeat step 9.5 with mysql.newway.sh.  You should be able to retrieve the book information because the shell script uses Secrets Manager to retrieve the credentials.
 
-### 9. Clean up
+- 9.11 - Go check the e-mail address that you subscribed to the SNS topic.  You should see Secrets Manager events (e.g. RotateSecret) and KMS events (e.g. CreateGrant).
 
-- 9.1 - If you enabled the rotation of the database secret, you will see a CloudFormation stack with a name referencing the serverless application repository.  Delete that stack.
-- 9.2 - Delete the CloudFormation stack you built from data-protection-main-yyyymmdd.yaml.
-- 9.3 - Delete the CloudFormation stack you built from data-protection-vpc-yyyymmdd.yaml.
-- 9.4 - Delete any S3 buckets that were created during the launch of the stack.  The bucket names begin with the stack name followed by *-s3bucket-* and some random characters (e.g. dataprot-main-s3-bucket-1a2b3c4d).
-- 9.5 - Delete any CloudWatch LogGroups that were created that you no longer need.
+### 10. Clean up
+
+- 10.1 - If you enabled the rotation of the database secret, you will see a CloudFormation stack with a name referencing the serverless application repository.  Delete that stack.
+- 10.2 - Delete the CloudFormation stack you built from data-protection-main-yyyymmdd.yaml.
+- 10.3 - Delete the CloudFormation stack you built from data-protection-vpc-yyyymmdd.yaml.
+- 10.4 - Delete any S3 buckets that were created during the launch of the stack.  The bucket names begin with the stack name followed by *-s3bucket-* and some random characters (e.g. dataprot-main-s3-bucket-1a2b3c4d).
+- 10.5 - Delete any CloudWatch LogGroups that were created that you no longer need.
+- 10.6 - Delete the SNS topic and subscription you created.
+- 10.7 - Delete the KMS key.  Note that you must schedule the deletion for a minimum of seven days in the future.
+- 10.8 - Delete the Systems Manager Parameter Store parameters named data-protection-cmk-arn and data-protection-topic-arn.
 
