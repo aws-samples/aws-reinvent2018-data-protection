@@ -78,7 +78,7 @@ This is not a best practice and was done only for demonstrative purposes.
 
 NOTE: As of the time of this writing, there is a beta version of the CloudFormation console available for testing.  The instructions below assume the pre-beta version of the CloudFormation console.
 
-- 1.1 - Download the data-protection-vpc-yyyymmdd.yaml file in this repository (where yyyymmdd represents the version date) and save it to your workstation.
+- 1.1 - Download the data-protection-vpc-yyyymmdd.yaml file in this repository (where yyyymmdd represents the version date) and save it to your workstation.  To download a file, open the link for the file in a new page.  Then right click on "Raw" and select "Save as" and save the file.   If your browser wants to save the file with a ".txt" extension, tou may need to type in the ".yaml" extension.
 - 1.2 - Go to the Cloudformation service console.
 - 1.3 - Click Create new stack.
 - 1.4 - Click Choose File and select the file you downloaded in step 1.1.
