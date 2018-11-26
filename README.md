@@ -174,7 +174,7 @@ cd
 
 ```
 ./mysql.oldway.sh
-use smdmeo;
+use smdemo;
 select * from bookinfo;
 quit;
 ```
@@ -187,7 +187,7 @@ The *select* statement should have returned one entry for Charles Dickens' Tale 
 
 ```
 ./mysql.newway.sh
-use smdmeo;
+use smdemo;
 select * from bookinfo;
 quit;
 ```
