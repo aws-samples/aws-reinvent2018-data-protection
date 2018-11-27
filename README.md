@@ -31,7 +31,7 @@ In order to complete build this architecture you'll need an AWS Account with ful
 
 ### Region
 
-You will need to build this architecture in regions that offer the services used in the chalk talk including AWS CloudHSM, AWS KMS, AWS Secrets Manager, Amazon EC2, Amazon SNS, and AWS Lambda.
+You will need to build this architecture in regions that offer the services used in the chalk talk including AWS KMS, AWS Secrets Manager, Amazon EC2, Amazon SNS, and AWS Lambda.
 Use the [Region Table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) to determine which services are available in a Region.
 We will use us-east-1 in this documentation.
 
