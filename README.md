@@ -222,7 +222,7 @@ If the password didn't change, refresh the screen and retrieve the scret again.
 
 ### 10. Clean up
 
-- 10.1 - If you enabled the rotation of the database secret, you will see a CloudFormation stack with a name referencing the serverless application repository.  Delete that stack.  Also, delete the AWS Lambda function that contains the name string that you entered in step 9.7.
+- 10.1 - Disable the rotation of the secret in the Secrets Manager console. In the CloudFormation console, you will see a CloudFormation stack with a name referencing the serverless application repository.  Delete that stack.
 - 10.2 - Delete the CloudFormation stack you built from data-protection-main-yyyymmdd.yaml.  If the stack deletion hangs, it may be because CloudFormation is having difficulty deleting the database security group it created.   If this is the case, the problem may be due to an Elastic Network Interface that could not be deleted.  You may need to detach and delete the interface before the security group can be deleted.
 - 10.3 - Delete the CloudFormation stack you built from data-protection-vpc-yyyymmdd.yaml.
 - 10.4 - Delete any S3 buckets that were created during the launch of the stack.  The bucket names begin with the stack name followed by *-s3bucket-* and some random characters (e.g. dataprot-main-s3-bucket-1a2b3c4d).
